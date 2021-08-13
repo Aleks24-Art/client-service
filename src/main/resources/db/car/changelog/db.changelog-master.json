@@ -1,0 +1,9 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "db/car/changelog/changes/create-table-clients.json"
+      }
+    }
+  ]
+}

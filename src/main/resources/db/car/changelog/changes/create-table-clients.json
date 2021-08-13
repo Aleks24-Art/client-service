@@ -1,0 +1,57 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create-table-client",
+        "author": "Artemiy Aleksenko",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "clients",
+              "columns": [
+                {
+                  "column": {
+                    "autoIncrement": true,
+                    "constraints": {
+                      "nullable": false,
+                      "primaryKey": true
+                    },
+                    "name": "id",
+                    "type": "BIGSERIAL"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "login",
+                    "type": "VARCHAR(200)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "name",
+                    "type": "VARCHAR(200)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "age",
+                    "type": "INTEGER"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
